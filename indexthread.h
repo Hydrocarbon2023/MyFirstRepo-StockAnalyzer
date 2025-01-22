@@ -1,3 +1,5 @@
+// By coconut, 2024.6
+
 #ifndef INDEXTHREAD_H
 #define INDEXTHREAD_H
 

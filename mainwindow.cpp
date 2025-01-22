@@ -1,3 +1,5 @@
+// By coconut, 2024.6
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "sortthread.h"

@@ -1,3 +1,5 @@
+// By coconut, 2024.6
+
 #include "indexthread.h"
 #include <iostream>
 #include <fstream>

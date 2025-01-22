@@ -1,3 +1,5 @@
+// By coconut, 2024.6
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include "sortthread.h"

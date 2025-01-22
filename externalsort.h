@@ -1,3 +1,5 @@
+// By coconut, 2024.6
+
 #ifndef EXTERNALSORT_H
 #define EXTERNALSORT_H
 #include <algorithm>

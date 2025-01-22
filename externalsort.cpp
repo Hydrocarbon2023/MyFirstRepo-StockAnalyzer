@@ -1,13 +1,7 @@
+// By coconut, 2024.6
+
 #include "externalsort.h"
 #include "stockdata.h"
-#include <fstream>
-#include <sstream>
-#include <string>
-#include <vector>
-#include <algorithm>
-#include <queue>
-#include <tuple>
-#include <iostream>
 
 typedef std::tuple<StockData, long long> HeapTuple;
 

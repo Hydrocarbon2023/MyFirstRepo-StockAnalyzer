@@ -1,3 +1,5 @@
+// By coconut, 2024.6
+
 #ifndef SORTTHREAD_H
 #define SORTTHREAD_H
 #include "externalsort.h"

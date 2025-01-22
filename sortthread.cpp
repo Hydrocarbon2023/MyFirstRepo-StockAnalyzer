@@ -1,3 +1,5 @@
+// By coconut, 2024.6
+
 #include "sortthread.h"
 // The project is so naive. 🤣 2025.1.22
 

@@ -1,3 +1,5 @@
+// By coconut, 2024.6
+
 #ifndef STOCKDATA_H
 #define STOCKDATA_H
 #include <fstream>
