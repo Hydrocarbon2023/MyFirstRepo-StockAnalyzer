@@ -1,12 +1,14 @@
-#include <sstream>
 #include "indexthread.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
 
 IndexThread::IndexThread(QObject *parent) :
     QThread(parent) {
 }
 
-void IndexThread::setInputPath(const std::string &path) {
-    inputPath = path;
+void IndexThread::setInPath(const std::string &path) {
+    inPath = path;
 }
 
 void IndexThread::setIndexPath(const std::string &path) {
@@ -39,7 +41,30 @@ StockData IndexThread::lineToData(const std::string &line) {
     return data;
 }
 
+void IndexThread::generateIndex(const std::string &inPath, const std::string &indexPath) {
+    emit updateCurrentState("开始创建索引！");
+    std::ifstream inputFile(inPath, std::ios::binary);
+    std::ofstream indexFile(indexPath);
+    if (!inputFile.is_open() || !indexFile.is_open())
+        throw std::runtime_error("打开文件失败TT");
+    std::string line;
+    std::streampos pos = inputFile.tellg();
+    std::getline(inputFile, line);
+    StockData formerData = lineToData(line);
+    StockData data;
+    indexFile << formerData.symbol_code << "," << formerData.trade_date.substr(0, 6) << "," << pos << std::endl;
+    pos = inputFile.tellg();
+    while (std::getline(inputFile, line)) {
+        data = lineToData(line);
+        if (data.symbol_code != formerData.symbol_code || data.trade_date.substr(0, 6) != formerData.trade_date.substr(0, 6)) {
+            indexFile << data.symbol_code << "," << data.trade_date.substr(0, 6) << "," << pos << std::endl;
+            formerData = data;
+        }
+        pos = inputFile.tellg();
+    }
+}
+
 void IndexThread::run() {
-    generateIndex(inputPath, indexPath);
+    generateIndex(inPath, indexPath);
     emit complete();
 }

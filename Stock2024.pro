@@ -10,13 +10,17 @@ CONFIG += c++17
 
 SOURCES += \
     externalsort.cpp \
+    indexthread.cpp \
     main.cpp \
     mainwindow.cpp \
+    qcustomplot.cpp \
     sortthread.cpp
 
 HEADERS += \
     externalsort.h \
+    indexthread.h \
     mainwindow.h \
+    qcustomplot.h \
     sortthread.h \
     stockdata.h
 
