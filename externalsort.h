@@ -1,5 +1,13 @@
 #ifndef EXTERNALSORT_H
 #define EXTERNALSORT_H
+#include <algorithm>
+#include <fstream>
+#include <iostream>
+#include <queue>
+#include <sstream>
+#include <string>
+#include <tuple>
+#include <vector>
 
 #include "stockdata.h"
 #include <QObject>

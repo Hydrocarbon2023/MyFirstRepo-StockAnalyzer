@@ -1,4 +1,5 @@
 #include "sortthread.h"
+// The project is so naive. 🤣 2025.1.22
 
 SortThread::SortThread(QObject *parent) :
     QThread(parent), exSort(new ExternalSort(this)) {

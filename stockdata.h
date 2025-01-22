@@ -1,6 +1,5 @@
 #ifndef STOCKDATA_H
 #define STOCKDATA_H
-
 #include <fstream>
 #include <string>
 

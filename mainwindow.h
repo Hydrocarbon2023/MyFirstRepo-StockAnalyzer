@@ -1,6 +1,5 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
 #include "sortthread.h"
 #include "indexthread.h"
 #include <qcustomplot.h>

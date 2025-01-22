@@ -1,6 +1,5 @@
 #ifndef SORTTHREAD_H
 #define SORTTHREAD_H
-
 #include "externalsort.h"
 #include <QThread>
 
