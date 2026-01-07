@@ -1,2 +1,2 @@
-This is my first repository on Github: a simple stock analyzer based on QT. <br/>
-It was the second semester in RUC. I pulled an all-nighter with my roommate in Lide Building and finally got it done in June, 2024.
+This is where it all started——my first repository on Github: a simple stock analyzer based on QT. <br/>
+I still remember that night in June, 2024. Due to the poor teaching and my struggle to adapt to college life, it was tough for me at that time.
